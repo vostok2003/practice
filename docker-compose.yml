@@ -1,0 +1,24 @@
+services:
+  backend:
+    build: ./backend
+    container_name: todo-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env
+    networks:
+      - todo-network
+
+  frontend:
+    build: ./frontend
+    container_name: todo-frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - todo-network
+    depends_on:
+      - backend
+  
+networks:
+  todo-network:
+    driver: bridge
