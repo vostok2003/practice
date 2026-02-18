@@ -55,3 +55,8 @@ Simple todo list application using MongoDB, Express, React, and Node.js.
 - PUT `/api/todos/:id` - Update todo
 - DELETE `/api/todos/:id` - Delete todo
 >>>>>>> 2333039 (newly added)
+
+
+crazzzy shit 
+well done broo
+
